@@ -1,6 +1,6 @@
 # Task Manager Application
 
-This is a Django-based Task Manager Application that allows users to create, view, update, and delete tasks. The backend API is built using Django REST Framework (DRF), and JWT is used for authentication. The frontend is implemented using React (if applicable).
+This is a Django-based Task Manager Application that allows users to create, view, update, and delete tasks. The backend API is built using Django REST Framework (DRF), and JWT is used for authentication. The frontend is implemented using React.
 
 
 ## Tech Stack
