@@ -6,7 +6,7 @@ This is a Django-based Task Manager Application that allows users to create, vie
 ## Tech Stack
 - **Backend**: Django, Django REST Framework, JWT
 - **Frontend**: React
-- **Database**: SQLite (can be changed to PostgreSQL, MySQL, etc.)
+- **Database**: SQLite
 
 ## Prerequisites
 Ensure you have the following installed:
@@ -19,3 +19,6 @@ Ensure you have the following installed:
 - djangorestframework==3.15.2
 - djangorestframework-simplejwt==5.3.1
 ** run "pip install -r requirements.txt" for installing all depedencies **
+
+**to runserver 
+- python manage.py runserver
