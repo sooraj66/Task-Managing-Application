@@ -70,7 +70,13 @@ def tasks_list(request):
     paginated_tasks = task_paginator.get_page(page)
 
     serializer = TaskSerializer(paginated_tasks, many=True)
-    json_data = serializer.data
+    json_data = {
+        'tasks': serializer.data,
+        'total_tasks': total_tasks,
+        'page': paginated_tasks.number,
+        'total_pages': task_paginator.num_pages
+    }
+
     return Response(json_data)
 
 
