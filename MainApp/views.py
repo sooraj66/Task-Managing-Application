@@ -66,6 +66,9 @@ def tasks_list(request):
     if status_filter is not None:
         tasks = tasks.filter(status=status_filter)
 
+    tasks = tasks.order_by("-updated_at")
+    total_tasks = tasks.count()
+
     task_paginator = Paginator(tasks, 10)
     paginated_tasks = task_paginator.get_page(page)
 
